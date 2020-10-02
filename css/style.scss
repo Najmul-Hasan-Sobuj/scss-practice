@@ -1,7 +1,37 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.one-header{
+  height: 50px;
+  width: 100%;
+  background-color: royalblue;
+}
+.tow-header{
+  height: 70px;
+  background:linear-gradient(90deg, #ff9966 0%,#ff5e62 100% );
+  @extend .one-header;
+}
+.side-barOne{
+  height: 100vh;
+  background:linear-gradient(90deg, #ee0979 0%,#ff6a00 100% );
+  width: 25%;
+  float: left;
+}
+.side-barTow{
+  @extend .side-barOne;
+  background:linear-gradient(90deg, #3a6186 0%,#89253e 100% );
+  width: 50%;
+}
+.side-barThere{
+  @extend .side-barOne;
+  background:linear-gradient(90deg, #76b852 0%,#8dc26f 100% );
+}
+.last{
+  height: 80px;
+  width: 100%;
+  background-color: slateblue;
+  
+  display: flow-root;
 }
